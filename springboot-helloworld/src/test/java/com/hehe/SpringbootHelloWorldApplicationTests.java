@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc //开启MockMvc
-public class SpringbootHelloworldApplicationTests {
+public class SpringbootHelloWorldApplicationTests {
 
 	@Autowired
 	private MockMvc mockMvc; //注入MockMvc

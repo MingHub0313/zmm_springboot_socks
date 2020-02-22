@@ -2,10 +2,7 @@ package com.hehe;
 
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,9 +26,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
  *
  */
 
+/**
+ * @Name MiniConstants
+ * @Author 900045
+ * @Created by 2019/5/14 0014
+ */
 @SpringBootApplication
 @Controller
-public class HelloworldApplication {
+public class HelloWorldApplication {
 
     @GetMapping("/")
     @ResponseBody
@@ -40,7 +42,8 @@ public class HelloworldApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloworldApplication.class, args); //启动项目
+        //启动项目
+        SpringApplication.run(HelloWorldApplication.class, args);
     }
 
 
