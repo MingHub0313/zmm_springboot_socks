@@ -1,17 +1,17 @@
 spring:
   datasource:
-    #Á¬½ÓMySQL
-    url: jdbc:mysql://localhost:3306/socks?useSSL=false
+    #è¿æ¥MySQL
+    url: jdbc:mysql://47.111.112.220:3306/socks?useSSL=false
     username: root
-    password: root
+    password: 19961001@Zmm
     driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:
   configuration:
-   #ÅäÖÃÏî£º¿ªÆôÏÂ»®Ïßµ½ÍÕ·åµÄ×Ô¶¯×ª»». ×÷ÓÃ£º½«Êı¾İ¿â×Ö¶Î¸ù¾İÍÕ·å¹æÔò×Ô¶¯×¢Èëµ½¶ÔÏóÊôĞÔ¡£
+    #é…ç½®é¡¹ï¼šå¼€å¯ä¸‹åˆ’çº¿åˆ°é©¼å³°çš„è‡ªåŠ¨è½¬æ¢. ä½œç”¨ï¼šå°†æ•°æ®åº“å­—æ®µæ ¹æ®é©¼å³°è§„åˆ™è‡ªåŠ¨æ³¨å…¥åˆ°å¯¹è±¡å±æ€§ã€‚
    map-underscore-to-camel-case: true
 
 logging:
   level:
-   #´òÓ¡SQLĞÅÏ¢
+    #æ‰“å°SQLä¿¡æ¯
    com.hehe.mapper: debug

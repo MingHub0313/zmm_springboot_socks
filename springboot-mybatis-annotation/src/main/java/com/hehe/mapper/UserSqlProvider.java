@@ -7,10 +7,19 @@ import org.apache.ibatis.jdbc.SQL;
 
 import java.lang.reflect.Field;
 
+
+
 /**
  * 主要用途：根据复杂的业务需求来动态生成SQL.
  * <p>
  * 目标：使用Java工具类来替代传统的XML文件.(例如：UserSqlProvider.java <-- UserMapper.xml)
+ */
+
+/**
+ * 根据复杂的业务需求来动态生成SQL
+ * @Name UserSqlProvider
+ * @Author zmm
+ * @Created by 2019/3/8 0008
  */
 public class UserSqlProvider {
     /**
