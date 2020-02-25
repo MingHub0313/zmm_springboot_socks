@@ -24,11 +24,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc //开启MockMvc
+//开启MockMvc
+@AutoConfigureMockMvc
 public class SpringbootHelloWorldApplicationTests {
 
+	//注入MockMvc
 	@Autowired
-	private MockMvc mockMvc; //注入MockMvc
+	private MockMvc mockMvc;
 
 	@Test
 	public void testHelloController() throws Exception {

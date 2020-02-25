@@ -9,4 +9,4 @@ CREATE TABLE `t_user` (
 ) ;
 
 INSERT INTO `t_user` VALUES ('1', 'admin', 'admin');
-INSERT INTO `t_user` VALUES ('2', 'yizhiwazi', '123456');
+INSERT INTO `t_user` VALUES ('2', 'zhangmingming', '123456');

@@ -20,8 +20,11 @@ public class MybatisApplicationTest {
 	public void test_db() {
 
 		//开始进行测试
+		//查询集合大于0
 		assertThat(userMapper.list().size()).isGreaterThan(1);
+		//userId = 1 查询结果不为null
 		assertThat(userMapper.getOne("1")).isNotEqualTo(null);
+		//userId = xxx 查询结果为null
 		assertThat(userMapper.getOne("xxx")).isEqualTo(null);
 
 

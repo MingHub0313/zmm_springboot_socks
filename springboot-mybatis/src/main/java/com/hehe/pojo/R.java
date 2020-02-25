@@ -2,6 +2,12 @@ package com.hehe.pojo;
 
 import java.io.Serializable;
 
+/**
+ * 返回的 泛型 对象
+ * @Name R
+ * @Author zmm
+ * @Created by 2019/3/8 0008
+ */
 public class R<T> implements Serializable {
 
     private static final long serialVersionUID = -4577255781088498763L;
@@ -9,11 +15,25 @@ public class R<T> implements Serializable {
     private static final int FAIL = 1;
     private static final int UNAUTHORIZED = 2;
 
-    private T data; //服务端数据
-    private int status = OK; //状态码
-    private String msg = ""; //描述信息
+    /**
+     * 服务端数据
+     */
+    private T data;
 
-    //APIS
+    /**
+     * 状态码
+     */
+    private int status = OK;
+
+    /**
+     * 描述信息
+     */
+    private String msg = "";
+
+    /**
+     * APIS
+     * @return
+     */
     public static R isOk(){
         return new R();
     }
@@ -37,12 +57,17 @@ public class R<T> implements Serializable {
     }
 
 
-    //Constructors
+    /**
+     * Constructors 空参 构造
+     */
     public R() {
 
     }
 
-    //Getter&Setters
+    /**
+     * Getter&Setters
+     * @return
+     */
     public String getMsg() {
         return msg;
     }

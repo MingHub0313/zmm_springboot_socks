@@ -1,5 +1,12 @@
 package com.hehe.pojo;
 
+
+/**
+ * User 实体
+ * @Name User
+ * @Author zmm
+ * @Created by 2019/3/8 0008
+ */
 public class User {
 
     private String userId;

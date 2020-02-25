@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * User 服务层 实现
+ * @Name UserServiceImpl
+ * @Author zmm
+ * @Created by 2019/3/8 0008
+ */
 @Service
 public class UserServiceImpl  implements UserService {
 
